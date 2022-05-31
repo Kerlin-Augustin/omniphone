@@ -1,0 +1,29 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+}
+img{
+  height: 200px;
+}
+
+body{
+  background: rgb(186, 238, 238);
+}
+
+.pic{
+  width:100%;
+}
+
+.list{
+  margin:10px;
+  width:45%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid grey;
+}
+
+span{
+  text-align: center;
+}
+
