@@ -11,4 +11,4 @@ My learning was focused on putting items in a queue then if I change my mind tak
 
 ## Lessons Learned:
 
-I learned <%= %> allows the ejs content to show on the screen and <% %> will remain on the backend. This was really helpful to learn early so the syntax could make more sense moving forward.
+I learned <%= %> allows you to put javascript on an html file. The content that goes in between the <%= %> syntax will show on the screen and content inside of the <% %> will remain on the backend. This was really helpful to learn early so the syntax could make more sense moving forward and be more clear.
