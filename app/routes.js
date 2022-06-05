@@ -15,6 +15,7 @@ module.exports = function(app, passport, db) {
           {device: 'omni laptop', src: 'https://via.placeholder.com/50/000000',cost: 2000, version: 1, size: 'pro'},
           {device: 'omni speakers', src:'https://via.placeholder.com/50/000000',cost: 200, version: 1, size: 'pro max'},
           {device: 'omni tv', src:'https://via.placeholder.com/50/000000',cost: 1000, version: 2, size: 'pro'},
+          
         ]
 
           db.collection('cart').find().toArray((err2, result) => {

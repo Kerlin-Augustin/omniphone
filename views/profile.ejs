@@ -6,15 +6,19 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="container">
+<body class="body-container">
 
-    <div class="page-header text-center">
-        <h1><span class="fa fa-anchor"></span> Omni Electronics</h1>
-        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
-    </div>
-
-    <div class="row">
+    
+        
+        <div class="page-header text-center">
+            <h1><img src="img/logo.png" alt="">Omni Electronics</h1>
+            <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+        </div>
+        
+        <section class="headings">
+            <h2 class="head-text">Omni Phone Gear 2 mini<h2>
+        </section>
+    <div class="row body-container" >
 
        
         <div class="container">
@@ -22,13 +26,13 @@
               <div class="col-sm-8">
   
                   <h3>Electronics</h3>
-  <ul>
+  <ul class="list-content">
       <% for(let i = 0; i < electronics.length; i++){ %>
 <li class="list">
     <img class="pic"src="<%=electronics[i].src%>" alt="">
     <span><%=electronics[i].device%></span>
-    <span><%=electronics[i].cost%></span>
-    <span><%=electronics[i].version%></span>
+    <span>Price: $<%=electronics[i].cost%></span>
+    <span>Gear: <%=electronics[i].version%></span>
     <span><%=electronics[i].size%></span>
     <span style="display:none"><%=electronics[i].src%></span>
     <button class="add">Buy</button>
@@ -39,26 +43,26 @@
            
               </div>
   
-              <div class="col-sm-4">
-                  <h3>Bought</h3>
-                  <ul id="current-order">
-                    <% for(let i = 0; i < cart.length; i++){ %>
-                        <li class="list">
-                            <span><%=cart[i].device%></span>
-                            <span><%=cart[i].cost%></span>
-                            <span><%=cart[i].version%></span>
-                            <span><%=cart[i].size%></span>
-                            <button class="delete-item">Return Item</button>
-                        </li>
-                             <% } %>
-                  </ul>
-  
-  
-                  <!-- <button id="clearOrder">Clear Order</button> -->
-
-              </div>
             </div>
-          </div>
+        </div>
+        <div class="col-sm-4">
+            <h3 class="bought-head">Bought</h3>
+            <ul id="current-order">
+              <% for(let i = 0; i < cart.length; i++){ %>
+                  <li class="list">
+                      <span><%=cart[i].device%></span>
+                      <span>Price: $<%=cart[i].cost%></span>
+                      <span>Gear: <%=cart[i].version%></span>
+                      <span><%=cart[i].size%></span>
+                      <button class="delete-item">Return Item</button>
+                  </li>
+                       <% } %>
+            </ul>
+
+
+            <!-- <button id="clearOrder">Clear Order</button> -->
+
+        </div>
 </div>
 
 <script src="main.js"></script>
