@@ -1,7 +1,7 @@
 # Omniphone
 This website allows you to click a button to buy a product. The product goes into a queue and can be returned if you click on them again.
 
-![Screen Shot 2022-06-03 at 10 49 40 PM](https://user-images.githubusercontent.com/102834611/171976639-8969e877-26b5-4b1f-ad3d-3d86bc940ad1.png)
+<img width="1425" alt="Screen Shot 2022-06-05 at 2 25 18 AM" src="https://user-images.githubusercontent.com/102834611/172038344-7ce339d4-860e-40c3-aa6f-280f3f5ed509.png">
 
 ## How It's Made:
 
